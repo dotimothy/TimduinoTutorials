@@ -1,12 +1,19 @@
-//turns arduino off
+/*
+* Off.ino: Turns off pin 13 (led indicator) on the Arduino Uno
+* Required Components 
+* 1 Arduino Uno
+*/
+
+//led variable to direct to pin 13
 int led = 13;
+
 void setup() {
-  // put your setup code here, to run once:
+  // setting outputs
   pinMode(led, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //setting led to LOW (thus turning it off)
   digitalWrite(led, LOW);
 
 }

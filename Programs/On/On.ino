@@ -1,5 +1,5 @@
 /*
-* On.ino: Turns on the pin 13 (led indicator) for Arduino Uno
+* On.ino: Turns on the pin 13 (led indicator) on the Arduino Uno
 * Required Components 
 * Arduino Uno
 */
@@ -12,7 +12,6 @@ void setup() {
 }
 
 void loop() {
-  //setting pin 13 to HIGH
+  //setting pin 13 to HIGH (thus turning it on)
   digitalWrite(led, HIGH);
-
 }
