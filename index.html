@@ -11,6 +11,14 @@
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
+	h1 {
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-size: 2vw;
+	}
+
 	@keyframes fadeIn {
 		from { opacity:0; }
 		to {opacity: 1;}
@@ -19,42 +27,43 @@
 
 	.fadein {
 		animation-name: fadeIn;
-		animation-duration: 4s;
-	}
-
-	#Flashing {
-		display: block; 
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
+		animation-duration: 5s;
 	}
 </style>
 
 <script>
 	var title = 'Welcome to Timduino Tutorials for the Arduino Uno!';
 	var i = 0;
-	function type() {
+	function typeTitle() {
 		if(i < title.length) {
 			document.getElementById("Title").innerHTML += title.charAt(i);
 			i++;
-			setTimeout(type, 50);
+			setTimeout(typeTitle, 75);
 		}
 	}
 
-	function show() {
-		//document.write("Next");
+	function playAudio(name) {
+		var audio = new Audio('media/' + name + '.mp3');
+		audio.play();
+		if(name == "background") {
+			audio.loop = true;
+		}
 	}
 
 	function body() {
-		type();
-		setTimeout(show, 3500);
+		setTimeout(typeTitle, 250);
+		playAudio("typing");
+		setTimeout(playAudio, 5500, "background");
 	}
 </script>
 
 
 <body onload="body()">
-	<h1 id="Title" style="text-align:center"></h1>
-	<img id="Flashing" class="fadein" src= "media/uno.gif" border="0" alt="Uno Flashing">
+	<h1 id="Title" style="text-align:center; font-weight:bold;"></h1>
+	<div id="List" class="fadein">
+		<marquee direction=right scrollamount="25"><img width="33%" src= "media/uno.gif" border="0" alt="Uno Flashing"></marquee>
+		<h2 style="font-weight:bold">Choose A Tutorial:</h2>
+	</div>
 </body>
 
 </html>
