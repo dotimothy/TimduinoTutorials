@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -16,11 +16,16 @@ a:click {
 }
 
 h1 {
-	font-size: 3vw;
+	font-size: 3em;
 }
 
 h2 {
-	font-size: 2vw;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight:lighter;
 }
 
 @keyframes fadeIn {
@@ -32,12 +37,12 @@ h2 {
 
 font {
 	font-family: courier;
-	font-size: 1.5vw;
+	font-size: 1em;
 }
 
 button {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1vw;
+	font-size: 1em;
 
 }
 
