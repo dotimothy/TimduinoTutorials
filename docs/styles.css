@@ -1,4 +1,4 @@
-* {
+ h1, h2 {
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
@@ -29,11 +29,30 @@
 
 	}
 
+
+	font {
+		font-family: courier;
+		font-size: 1.5vw;
+	}
+
+	button {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1vw;
+
+	}
+
 	.fadein {
 		animation-name: fadeIn;
 		animation-duration: 7s;
 	}
 
-	font {
-		font-size: 24px;
+	.fadeinfast {
+		animation-name: fadeIn;
+		animation-duration: 3s;
+	}
+
+	.sourcecode {
+		border: thin solid black;
+		background-color: #eee;
+		padding: 10px;
 	}

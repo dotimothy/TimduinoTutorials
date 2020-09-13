@@ -1,4 +1,5 @@
 /*
+ * @author Timothy Do
  * Breathing.ino: A program to control leds with a breathing storbing effect
  * Required Components
  * 1 Arduino Uno
