@@ -18,6 +18,8 @@
 <img width="25%" src="https://raw.githubusercontent.com/dotimothy/TimduinoTutorials/master/media/schematicbasic.jpg" style="margin-right: auto; margin-left:auto; display:block;">
 <h3> In the <code>setup()</code> function, we set the pin to output some current. To do this, we call <code>pinMode()</code> which takes in two parameters: the first being the pin number, the second being either <code>INPUT</code> or <code>OUTPUT</code>. We call the function with the first parameter being the variable <code>led</code> (pin 13) and the second parameter being output (because we want to change the voltage of the LED).</h3>
 <h3>Finally, in the <code>loop()</code> function, we want to continously tell the Arduino to supply voltage to the LED in pin 13. In this case, we use the function <code>digitalWrite()</code>which allows us to change the voltage to either <code>HIGH</code> (turning it on) or <code>LOW</code> (turning it off). Again, the first parameter would be <code>led</code> (pin 13), and the second variable would be set to <code>HIGH</code>, to provide sufficient voltage to turn on the LED. And woahla: when you send the program to the Arduino, it will turn it's LED Indicator light on like in the video demonstration below!
+<h2>Video Demonstration</h2>
+<iframe width="893" height="502" style="margin-left:auto; margin-right:auto; margin-top: auto; margin-bottom: auto; display: block;" src="https://www.youtube.com/embed/A5uxz8flnzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2> Source Code for On.ino </h2>
 <div class="sourcecode">
 <pre>
