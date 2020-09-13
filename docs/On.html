@@ -8,16 +8,18 @@
 	<script src="main.js"></script>
 </head>
 
-<body>
+<body class="fadeinfast">
 <h1>On.ino: Turning on the Uno's LED (Pin 13)</h1>
 <h2>Objective: This tutorial is meant to get you started in writing your first program in the Arduino IDE. The goal is to show that you can change the behavior of the Arduino Uno by turning one of the LED lights (pin 13 specifically) on the board. </h2>
 <h2>Required Components:</h2>
 <h3> 1 Arduino Uno </h3>
 <h2>Explanations:</h2>
 <h3>We first declare and initialize a variable named <code>led</code> of type <code>int</code> (short for integer) to the value <code>13</code>, so we can indicate what pin we need to turn on (in this case pin 13 for the LED shown in the schematic)</h3> 
-<img src="https://raw.githubusercontent.com/dotimothy/TimduinoTutorials/master/media/schematicbasic.jpg">
+<img width="25%" src="https://raw.githubusercontent.com/dotimothy/TimduinoTutorials/master/media/schematicbasic.jpg" style="margin-right: auto; margin-left:auto; display:block;">
+<h3> In the <code>setup()</code> function, we set the pin to output some current. To do this, we call <code>pinMode()</code> which takes in two parameters: the first being the pin number, the second being either <code>INPUT</code> or <code>OUTPUT</code>. We call the function with the first parameter being the variable <code>led</code> (pin 13) and the second parameter being output (because we want to change the voltage of the LED).</h3>
+<h3>Finally, in the <code>loop()</code> function, we want to continously tell the Arduino to supply voltage to the LED in pin 13. In this case, we use the function <code>digitalWrite()</code>which allows us to change the voltage to either <code>HIGH</code> (turning it on) or <code>LOW</code> (turning it off). Again, the first parameter would be <code>led</code> (pin 13), and the second variable would be set to <code>HIGH</code>, to provide sufficient voltage to turn on the LED. And woahla: when you send the program to the Arduino, it will turn it's LED Indicator light on like in the video demonstration below!
 <h2> Source Code for On.ino </h2>
-<div class="fadeinfast sourcecode">
+<div class="sourcecode">
 <pre>
 <font color="#95a5a6">&#47;*</font>
 <font color="#95a5a6"> * @author Timothy Do</font>
@@ -47,6 +49,7 @@
 
 <footer class="fadeinfast">
 	<h2 style="font-weight:bold">Made by <a href="https://dotimothy.github.io/real.html" target="_blank">@Timothy Do.</a></h2>
+	<a href="index.html"><h2>Home Page</h2></a>
 	<h2 style="font-weight:bold">Check out the <a href="https://github.com/dotimothy/TimduinoTutorials" target="_blank">Github Repo!</h2>
 </footer>
 
