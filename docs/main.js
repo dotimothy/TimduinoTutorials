@@ -21,10 +21,9 @@ function clickButton(name) {
 }
 
 function body() {
-	document.write("Under Construction");
-	/*
 	setTimeout(typeTitle, 775);
 	setTimeout(clickButton, 525, 'typing');
 	setTimeout(clickButton, 6000, 'background');
-	*/
+	//Uncomment when work in progress
+	//document.write("Timduino Tutorials is Under Construction");
 }

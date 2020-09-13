@@ -1,7 +1,8 @@
 /*
-  On.ino: Turns on the pin 13 (led indicator) on the Arduino Uno
-  Required Components
-  Arduino Uno
+ * @author Timothy Do
+ * On.ino: Turns on the pin 13 (led indicator) on the Arduino Uno
+ * Required Components
+ * Arduino Uno
 */
 
 //setting led pin to pin 13
