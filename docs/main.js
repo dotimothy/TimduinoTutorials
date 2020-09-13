@@ -21,7 +21,10 @@ function clickButton(name) {
 }
 
 function body() {
+	document.write("Under Construction");
+	/*
 	setTimeout(typeTitle, 775);
 	setTimeout(clickButton, 525, 'typing');
 	setTimeout(clickButton, 6000, 'background');
+	*/
 }
