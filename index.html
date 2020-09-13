@@ -10,10 +10,51 @@
 	* {
 		font-family: 'Source Sans Pro', sans-serif;
 	}
+
+	@keyframes fadeIn {
+		from { opacity:0; }
+		to {opacity: 1;}
+
+	}
+
+	.fadein {
+		animation-name: fadeIn;
+		animation-duration: 4s;
+	}
+
+	#Flashing {
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 </style>
 
-<body>
-	<h1>Welcome to Timduino Tutorials for then Arduino Uno!</h1>
+<script>
+	var title = 'Welcome to Timduino Tutorials for the Arduino Uno!';
+	var i = 0;
+	function type() {
+		if(i < title.length) {
+			document.getElementById("Title").innerHTML += title.charAt(i);
+			i++;
+			setTimeout(type, 50);
+		}
+	}
+
+	function show() {
+		//document.write("Next");
+	}
+
+	function body() {
+		type();
+		setTimeout(show, 3500);
+	}
+</script>
+
+
+<body onload="body()">
+	<h1 id="Title" style="text-align:center"></h1>
+	<img id="Flashing" class="fadein" src= "media/uno.gif" border="0" alt="Uno Flashing">
 </body>
 
 </html>
