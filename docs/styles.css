@@ -1,0 +1,22 @@
+* {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	h1 {
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-size: 2vw;
+	}
+
+	@keyframes fadeIn {
+		from { opacity:0; }
+		to {opacity: 1;}
+
+	}
+
+	.fadein {
+		animation-name: fadeIn;
+		animation-duration: 7s;
+	}

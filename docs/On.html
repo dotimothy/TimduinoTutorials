@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<body>
+
+<div>
+<pre>
+<font color="#95a5a6">&#47;*</font>
+<font color="#95a5a6"> &nbsp;On.ino: Turns on the pin 13 (led indicator) on the Arduino Uno</font>
+<font color="#95a5a6"> &nbsp;Required Components</font>
+<font color="#95a5a6"> &nbsp;Arduino Uno</font>
+<font color="#95a5a6">*&#47;</font>
+
+<font color="#434f54">&#47;&#47;setting led pin to pin 13</font>
+<font color="#00979c">int</font> <font color="#000000">led</font> <font color="#434f54">=</font> <font color="#000000">13</font><font color="#000000">;</font>
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">&#47;&#47; setting outputs</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">&#47;&#47;setting pin 13 to HIGH (thus turning it on)</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+</pre>
+
+</div>
+
+</html>

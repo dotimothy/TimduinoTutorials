@@ -3,73 +3,19 @@
 <head>
 	<title>Timdunio Tutorials</title>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link rel="icon" href="media/uno.ico">
+	<link rel="icon" href="https://raw.githubusercontent.com/dotimothy/TimduinoTutorials/master/media/uno.ico">
+	<link rel="stylesheet" href="styles.css">
+	<script src="main.js"></script>
 </head>
-
-<style>
-	* {
-		font-family: 'Source Sans Pro', sans-serif;
-	}
-
-	h1 {
-		font-size: 3vw;
-	}
-
-	h2 {
-		font-size: 2vw;
-	}
-
-	@keyframes fadeIn {
-		from { opacity:0; }
-		to {opacity: 1;}
-
-	}
-
-	.fadein {
-		animation-name: fadeIn;
-		animation-duration: 7s;
-	}
-</style>
-
-<script>
-	var title = 'Welcome to Timduino Tutorials for the Arduino Uno!';
-	var i = 0;
-	function typeTitle() {
-		if(i < title.length) {
-			document.getElementById("Title").innerHTML += title.charAt(i);
-			i++;
-			setTimeout(typeTitle, 75);
-		}
-	}
-
-	function playAudio(name) {
-		var audio = new Audio('media/' + name + '.mp3');
-		audio.play();
-		if(name == "background") {
-			audio.loop = true;
-		}
-	}
-
-	function clickButton(name) {
-		var button = document.getElementById(name).click();
-	}
-
-	function body() {
-		setTimeout(typeTitle, 775);
-		setTimeout(clickButton, 525, 'typing');
-		setTimeout(clickButton, 6000, 'background');
-	}
-</script>
-
 
 <body onload="body()">
 	<h1 id="Title" style="text-align:center; font-weight:bolder;"></h1>
 	<div id="List" class="fadein">
-		<marquee direction=right scrollamount="25"><img width="33%" src= "media/uno.gif" border="0" alt="Uno Flashing"></marquee>
+		<marquee direction=right scrollamount="25"><img width="33%" src= "https://raw.githubusercontent.com/dotimothy/TimduinoTutorials/master/media/uno.gif" border="0" alt="Uno Flashing"></marquee>
 		<h1 style="font-weight:bolder">Choose A Tutorial:</h1>
 		<h2 style="font-weight:bold">The Fundamentals</h2>
-		<h2 style="font-weight:normal;"><a href="On">On.ino</a></h2>
-		<h2 style="font-weight:normal">Off.ino</h2>
+		<h2 style="font-weight:normal;"><a href="On.html">On.ino</a></h2>
+		<h2 style="font-weight:normal"><a href="Off.html">Off.ino</a></h2>
 		<h2 style="font-weight:normal">Blinking.ino</h2>
 		<h2 style="font-weight:bold" >Basic Circuit Components (LEDs & Resistors)</h2>
 		<h2 style="font-weight:normal">Levels.ino</h2>
@@ -85,7 +31,7 @@
 
 <footer class="fadein">
 	<h2 style="font-weight:bold">Made by <a href="https://dotimothy.github.io/real.html" target="_blank">@Timothy Do.</a></h2>
-	<h2 style="font-weight:bold">Check out the Github Repo!</h2>
+	<h2 style="font-weight:bold">Check out the <a href="https://github.com/dotimothy/TimduinoTutorials" target="_blank">Github Repo!</h2>
 </footer>
 
 </html>
