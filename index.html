@@ -52,7 +52,7 @@
 
 	function body() {
 		setTimeout(typeTitle, 250);
-		playAudio("typing");
+		setTimeout(playAudio, 25, "typing");
 		setTimeout(playAudio, 5500, "background");
 	}
 </script>
