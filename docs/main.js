@@ -9,7 +9,7 @@ function typeTitle() {
 }
 
 function playAudio(name) {
-	var audio = new Audio('media/' + name + '.mp3');
+	var audio = new Audio('https://github.com/dotimothy/TimduinoTutorials/raw/master/media/' + name + '.mp3');
 	audio.play();
 	if(name == "background") {
 		audio.loop = true;
