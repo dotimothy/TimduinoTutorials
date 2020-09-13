@@ -4,8 +4,8 @@
 
 <div>
 <pre>
-<font color="#95a5a6">&#47;*</font>
-<font color="#95a5a6">* Off.ino: Turns off pin 13 (led indicator) on the Arduino Uno</font>
+ <font color="#95a5a6">&#47;*</font>
+<font color="#95a5a6">* Blinking.ino: Blinks pin 13 (led indicator) on the Arduino Uno</font>
 <font color="#95a5a6">* Required Components </font>
 <font color="#95a5a6">* 1 Arduino Uno</font>
 <font color="#95a5a6">*&#47;</font>
@@ -14,14 +14,17 @@
 <font color="#00979c">int</font> <font color="#000000">led</font> <font color="#434f54">=</font> <font color="#000000">13</font><font color="#000000">;</font>
 
 <font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
- &nbsp;<font color="#434f54">&#47;&#47; setting outputs</font>
+ &nbsp;<font color="#434f54">&#47;&#47;setting outputs</font>
  &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
 <font color="#000000">}</font>
 
 <font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
- &nbsp;<font color="#434f54">&#47;&#47;setting led to LOW (thus turning it off)</font>
+ &nbsp;<font color="#434f54">&#47;&#47;turn on LED</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">500</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47;turn off LED</font>
  &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">led</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
-
+ &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">500</font><font color="#000000">)</font><font color="#000000">;</font>
 <font color="#000000">}</font>
 
 </pre>
