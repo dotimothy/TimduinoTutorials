@@ -1,7 +1,7 @@
- /*
-* Blinking.ino: Blinks pin 13 (led indicator) on the Arduino Uno
-* Required Components 
-* 1 Arduino Uno
+/*
+  Blinking.ino: Blinks pin 13 (led indicator) on the Arduino Uno
+  Required Components
+  1 Arduino Uno
 */
 
 //led variable to direct to pin 13
@@ -15,8 +15,8 @@ void setup() {
 void loop() {
   //turn on LED
   digitalWrite(led, HIGH);
-  delay(500);
+  delay(100);
   //turn off LED
   digitalWrite(led, LOW);
-  delay(500);
+  delay(900);
 }
