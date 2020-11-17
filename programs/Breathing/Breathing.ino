@@ -19,21 +19,21 @@ void setup() {
 
 void loop() {
   dim();
-  delay(100);
+  delay(50);
   brighten();
-  delay(100);
+  delay(50);
 }
 
 void dim() {
   for (int i = 0; i <= 255; i++) {
     analogWrite(led, i);
-    delay(5);
+    delay(2);
   }
 }
 
 void brighten() {
   for (int i = 255; i >= 0; i--) {
     analogWrite(led, i);
-    delay(5);
+    delay(2);
   }
 }
