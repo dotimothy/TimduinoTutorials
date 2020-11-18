@@ -1,6 +1,6 @@
 /*
  * @author Timothy Do
- * simpleColor.ino: A program for RGB Leds to Display Different Colors using DigitalWrite
+ * simpleColor.ino: A program for RGB Leds to Display Different Colors using digitalWrite
  * 
  */
 
@@ -8,12 +8,6 @@
 int red = 12;
 int green = 7;
 int blue = 3;
-
-void off();
-void onRed();
-void onGreen(); 
-void onBlue();
-void pause(); 
 
 //set pins to each color cathode
 void setup() {
@@ -28,6 +22,10 @@ void off() {
   digitalWrite(blue, LOW);
 }
 
+void pause() {
+  delay(200);
+}
+
 void onRed() {
   digitalWrite(red, HIGH);
 }
@@ -40,13 +38,9 @@ void onBlue() {
   digitalWrite(blue, HIGH);
 }
 
-void pause() {
-  delay(500);
-}
-
-
 void loop() {
   //Red
+  off();
   onRed();
   pause(); 
   off();
@@ -77,8 +71,4 @@ void loop() {
   onRed();
   onGreen();
   onBlue();
-  pause();
-  //Off
-  off();
-  pause();
 }

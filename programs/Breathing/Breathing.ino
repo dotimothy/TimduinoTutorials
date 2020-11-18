@@ -8,8 +8,6 @@
  * 1 100 Ω Resistor
  * 3 Jumper Wires
 */
-void dim();
-void brighten();
 
 //connect positve to pin 6, negative to ground
 int led = 6;
