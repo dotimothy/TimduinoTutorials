@@ -1,18 +1,19 @@
 #include <Arduino.h>
 
-const int ledPin = 2; // Built-in LED pin on many ESP32 boards
+const int outPin = 2; // Output Pin
+const int interval = 500; // Delay in ms
 
 void setup() {
   // Initialize digital pin as output
-  pinMode(ledPin, OUTPUT);
+  pinMode(outPin, OUTPUT);
 }
 
 void loop() {
   // Turn the LED on
-  digitalWrite(ledPin, HIGH); 
-  delay(1000);             // Wait for 1 second
+  digitalWrite(outPin, HIGH); 
+  delay(interval);             
 
   // Turn the LED off
-  digitalWrite(ledPin, LOW);
-  delay(1000);             // Wait for 1 second
+  digitalWrite(outPin, LOW);
+  delay(interval);             
 }
